@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-display: swap;
+    src: url('../fonts/AlegreyaSans-Regular.eot');
+    src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'),
+        url('../fonts/AlegreyaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Regular.woff') format('woff'),
+        url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-display: swap;
+    src: url('../fonts/AlegreyaSans-Bold.eot');
+    src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'),
+        url('../fonts/AlegreyaSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Bold.woff') format('woff'),
+        url('../fonts/AlegreyaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-display: swap;
+    src: url('../fonts/AlegreyaSans-Medium.eot');
+    src: local('Alegreya Sans Medium'), local('AlegreyaSans-Medium'),
+        url('../fonts/AlegreyaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlegreyaSans-Medium.woff2') format('woff2'),
+        url('../fonts/AlegreyaSans-Medium.woff') format('woff'),
+        url('../fonts/AlegreyaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
