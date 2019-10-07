@@ -11,12 +11,47 @@ $(document).ready(function () {
         prevArrow: $('.footer-arrows__left'),
         nextArrow: $('.footer-arrows__right'),
         responsive: [{
-            breakpoint: 981,
+            breakpoint: 1171,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 901,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
         }]
+    });
+
+    $("form.exchange-form").submit(function (r) {
+        return r.preventDefault(),
+            $.ajax({
+                type: "POST",
+                url: "PHPMailer/mailContact.php",
+                data: new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+            }).done(function () {
+                $(this).find("input").val(""),
+                    $(".popup, .popup-thanks").addClass("popup-active"),
+                    $("form").trigger("reset")
+            })
+    });
+
+
+    $(".burger").click(function () {
+        if ($(this).next(".nav-list").css("display") == "none") {
+            $(this).next(".nav-list").slideDown();
+            $(".burger").addClass("burger-open");
+        }
+        else {
+            $(".burger").removeClass("burger-open");
+            $(this).next(".nav-list").slideUp();
+        }
     });
     
 });

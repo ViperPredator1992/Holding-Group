@@ -1,7 +1,6 @@
 $line-height: 43px
 $main-line-height: 58px
 
-
 *,
 *::before,
 *::after
@@ -67,3 +66,29 @@ button
     align-items: center  
     +buttons-text
     color: $black
+.burger
+    display: none
+    position: absolute
+    top: 20px
+    right: 15px
+    cursor: pointer
+    width: 34px
+    height: 34px
+    &__top
+        position: absolute
+        top: 8px
+        width: 30px
+        height: 2px
+        background-color: $white    
+    &__center
+        position: absolute
+        top: 16px
+        width: 30px
+        height: 2px
+        background-color: $white    
+    &__bottom
+        position: absolute
+        top: 24px
+        width: 30px
+        height: 2px
+        background-color: $white    
