@@ -1,3 +1,7 @@
+$line-height: 43px
+$main-line-height: 58px
+
+
 *,
 *::before,
 *::after
@@ -8,3 +12,58 @@ body
     font-weight: normal
     font-size: 14px
     color: $white
+.container
+    max-width: 1180px
+    margin: auto
+    padding: 0 15px  
+a
+    text-decoration: none
+    display: block
+img
+    max-width: 100%
+button
+    &:hover
+        cursor: pointer    
+=large-blue-bg-text
+    font:
+        size: 36px
+        weight: bold
+    color: $white  
+=small-blue-bg-text
+    font:
+        size: 14px
+        weight: normal
+    color: $white   
+=main-title
+    font:
+        weight: bold
+        size: 48px      
+.main-title           
+    +main-title
+    line-height: $main-line-height
+    max-width: 590px
+=medium-text
+    font: 
+        size: 18px
+        weight: 500    
+=title
+    font:
+        size: 36px
+        weight: bold    
+.title
+   +title
+   text-align: center 
+=buttons-text
+    font: 
+        size: 24px
+        weight: bold
+.button
+    width: 264px
+    height: 52px
+    background-color: $button
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+    border-radius: 10px  
+    display: flex
+    align-items: center  
+    +buttons-text
+    color: $black

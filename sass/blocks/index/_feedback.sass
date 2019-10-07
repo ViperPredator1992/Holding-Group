@@ -1,0 +1,26 @@
+.feedback
+    position: relative
+    &::after
+        content: ''
+        background: url(../img/groupBg1.png) center no-repeat
+        width: 100%
+        max-width: 1920px
+        min-height: 837px
+        position: absolute
+        left: 0
+        top: 100px
+    &__title
+        padding-top: 250px
+        position: relative
+        z-index: 2
+        margin: 0 0 20px
+    &__subtitle
+        +medium-text
+        color: $white
+        position: relative
+        z-index: 2
+        text-align: center
+        margin: 0 auto 80px
+        display: block
+        max-width: 470px 
+        line-height: 22px       

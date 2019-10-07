@@ -1,0 +1,54 @@
+.header
+    background-color: $blue
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height: 150px
+    &__logo
+        +large-blue-bg-text
+        line-height: $line-height
+        text-align: center
+        margin-right: 55px
+        span
+            display: block
+            +small-blue-bg-text
+            line-height: $line-height - 26px
+    &__phone
+        margin: 8px 0 10px
+        position: relative
+        &::before
+            content: url(../img/phone.png)
+            position: absolute
+            top: 2px
+            left: -25px
+    &__address
+        margin: 0  
+    &-left
+        display: flex
+        align-items: center            
+.call
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    color: $white          
+.address
+    +small-blue-bg-text
+.nav
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        &__item
+            margin: 0 5px
+        &__link
+            +small-blue-bg-text
+            padding: 5px 10px
+            transition: .3s
+            border-radius: 3px
+            &:hover
+                background-color: rgba(0, 0, 0, 0.1)
+            &.active
+                background-color: $white
+                color: $black
