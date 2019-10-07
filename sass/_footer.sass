@@ -1,0 +1,64 @@
+.footer
+    background-color: $footer
+    &-top
+        background-color: $white
+        position: relative
+        margin-top: -60px
+        .slick-slider
+            padding: 40px 0
+            max-width: 1000px
+            margin: auto
+        .slick-slide
+            img
+                margin: auto
+    &-arrows
+        &__left
+            position: absolute
+            top: 50px
+            left: 20px
+            &_image
+                background: url(../img/arrow.png) no-repeat
+                width: 16px
+                height: 26px
+                cursor: pointer
+        &__right
+            position: absolute
+            top: 50px
+            right: 20px
+            &_image
+                background: url(../img/arrow.png) no-repeat
+                width: 16px
+                height: 26px
+                transform: rotate(180deg)
+                cursor: pointer 
+    &__logo
+        +buttons-text
+        color: $white
+    &-center
+        padding: 60px 0 70px
+        display: flex
+        align-items: center
+        justify-content: space-between    
+    &-list
+        margin: 0
+        padding: 0
+        display: flex
+        list-style: none
+        &__item
+            margin: 0 20px
+        &__link  
+            color: $white
+            font-size: 18px 
+    &-bottom
+        text-align: center
+        &__text
+            margin: 0 0 5px
+        &__date
+            padding: 30px 0
+            display: block             
+.social
+    display: flex
+    &__link
+        margin-right: 8px
+        &:last-child
+            margin-right: 0            

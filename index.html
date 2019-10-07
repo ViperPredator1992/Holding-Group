@@ -101,9 +101,102 @@
             <h2 class="title feedback__title">Обратная связь</h2>
             <span class="feedback__subtitle">Чтобы связаться с нами, пожалуйста, используйте форму ниже.
                 Все поля обязательны.</span>
+            <form class="form" method="post">
+                <div class="form-block">
+                    <div class="form-block__input">
+                        <label for="input-label">Как вас зовут?</label>
+                        <input class="input" type="text" id="input-label" name="user_name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-block__input">
+                        <label for="input-label">Какую компанию вы представляете?</label>
+                        <input class="input" type="text" id="input-label" name="user_company" placeholder="Ваша компания" required>
+                    </div>
+                    <div class="form-block__input">
+                        <label for="input-label">Как с вами связаться? </label>
+                        <input class="input" type="tel" id="input-label" name="user_phone" placeholder="Ваш телефон" required>
+                    </div>
+                </div>
+                <div class="form-block">
+                    <div class="file">
+                        <div class="file__title">Приложите файл со спецификацией</div>
+                        <div class="file__subtitle">Это поможет вам быстрее получить расчет заказа</div>
+                        <input type="file" id="file-id" class="file__input">
+                        <label for="file-id"></label>
+                    </div>
+                    <div class="form-captcha"></div>
+                    <button type="submit" class="form-block__button button">Отправить</button>
+                    <p>Нажатие означает что вы согласны<br>
+                        с политикой конфиденциальности</p>
+                </div>
+            </form>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-slide">
+                    <div class="footer-top__item">
+                        <img src="./img/slide1.png" alt="" class="footer-top__image">
+                    </div>
+                    <div class="footer-top__item">
+                        <img src="./img/slide2.png" alt="" class="footer-top__image">
+                    </div>
+                    <div class="footer-top__item">
+                        <img src="./img/slide3.png" alt="" class="footer-top__image">
+                    </div>
+                    <div class="footer-top__item">
+                        <img src="./img/slide4.png" alt="" class="footer-top__image">
+                    </div>
+                    <div class="footer-top__item">
+                        <img src="./img/slide3.png" alt="" class="footer-top__image">
+                    </div>
+                    <div class="footer-top__item">
+                        <img src="./img/slide4.png" alt="" class="footer-top__image">
+                    </div>
+                </div>
+                <div class="footer-arrows">
+                    <div class="footer-arrows__left">
+                        <div class="footer-arrows__left_image"></div>
+                    </div>
+                    <div class="footer-arrows__right">
+                        <div class="footer-arrows__right_image"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center">
+                <a href="index.html" class="footer__logo">Holding Group</a>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Карта сайта</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__link">Партнерам</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <a href="#" class="social__link">
+                        <img src="./img/fb.png" alt="" class="social__image">
+                    </a>
+                    <a href="#" class="social__link">
+                        <img src="./img/vk.png" alt="" class="social__image">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">ООО “Холдинг Групп”,</p>
+                <p class="footer-bottom__text">ОГРН 450453047530748560 ИНН 414860486012358</p>
+                <p class="footer-bottom__text">Все права на графические, текстовые, музыкальные и иные материалы,
+                    представленные на сайте,
+                    принадлежат их законным владельцам</p>
+                <span class="footer-bottom__date">2002 – 2019</span>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
