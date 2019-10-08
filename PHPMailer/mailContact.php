@@ -1,8 +1,8 @@
 <?php 
 
 $name = $_POST['user_name'];
-$email = $_POST['user_email'];
-$text = $_POST['user_text'];
+$company = $_POST['user_company'];
+$phone = $_POST['user_phone'];
 
 
 require_once('PHPMailerAutoload.php');
@@ -25,16 +25,16 @@ $mail->addAddress('sniper.semenov@ukr.net');     // Add a recipient
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+$mail->addAttachment($_FILES['upload']['tmp_name'], $_FILES['upload']['name']);         // Add attachments
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Сообщение из формы со страницы "Контакты" - Wentop';
+$mail->Subject = 'Сообщение из формы - Holding Group';
 $mail->Body    = '
 	Пользователь оставил данные <br> 
-	Ф.И.O: ' . $name . ' <br> 
-	Эл почта: ' . $email . ' <br> 
-	Сообщение: ' . $text . '<br>';
+	Ваше имя: ' . $name . ' <br> 
+	Название компании: ' . $company . ' <br> 
+	Ваш телефон: ' . $phone . '<br>';
 $mail->AltBody = 'Это альтернативный текст';
 
 if(!$mail->send()) {

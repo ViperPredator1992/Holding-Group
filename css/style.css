@@ -712,6 +712,10 @@ button:hover {
   top: 100px;
 }
 
+.feedback .container {
+  max-width: 950px;
+}
+
 .feedback__title {
   padding-top: 250px;
   position: relative;

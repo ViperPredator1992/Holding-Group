@@ -106,7 +106,7 @@
             <h2 class="title feedback__title">Обратная связь</h2>
             <span class="feedback__subtitle">Чтобы связаться с нами, пожалуйста, используйте форму ниже.
                 Все поля обязательны.</span>
-            <form class="form" method="post">
+            <form class="form" method="post" enctype="multipart/form-data">
                 <div class="form-block">
                     <div class="form-block__input">
                         <label for="input-label">Как вас зовут?</label>
@@ -125,7 +125,7 @@
                     <div class="file">
                         <div class="file__title">Приложите файл со спецификацией</div>
                         <div class="file__subtitle">Это поможет вам быстрее получить расчет заказа</div>
-                        <input type="file" id="file-id" class="file__input">
+                        <input type="file" name="upload" id="file-id" class="file__input" required>
                         <label for="file-id"></label>
                     </div>
                     <div class="form-captcha"></div>

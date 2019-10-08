@@ -26,7 +26,7 @@ $(document).ready(function () {
         }]
     });
 
-    $("form.exchange-form").submit(function (r) {
+    $("form.form").submit(function (r) {
         return r.preventDefault(),
             $.ajax({
                 type: "POST",
